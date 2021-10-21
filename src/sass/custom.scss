@@ -19,6 +19,10 @@
   padding: 0;
 }
 
+h3 {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
 body {
   background: var(--bg);
   color: var(--text);
@@ -26,6 +30,11 @@ body {
 }
 
 a {
+  text-decoration: none;
+}
+
+.int-link {
+  color: var(--text);
   text-decoration: none;
 }
 

@@ -1,9 +1,15 @@
+import { PageList } from "./page_list.js";
+
 const PageDetail = (argument) => {
 
   const displaySimilarGames = (response) => {
     for (let i = 0; i < 4 && i < response.results.length; i++) {
       document.querySelector('.similar-games').insertAdjacentHTML('beforeend', `<div class="similar similar${response.results[i].id}"></div>`);
       document.querySelector(`.similar${response.results[i].id}`).style.backgroundImage = `url(${response.results[i].background_image})`;
+      document.querySelector(`.similar${response.results[i].id}`).innerHTML = `<h3>${response.results[i].name}</h3>`;
+      document.querySelector(`.similar${response.results[i].id}`).addEventListener('click', (e) => {
+        PageDetail(response.results[i].id);
+      })
     }
     return;
   }
@@ -90,15 +96,15 @@ const PageDetail = (argument) => {
     document.querySelector(".topBigCard").style.backgroundImage = `url(${response.background_image})`;
     if (response.developers.length > 0)
       for (let value of response.developers)
-        document.querySelector(".developers").insertAdjacentHTML('beforeend', `<p> ${value.name}</p> `);
+        document.querySelector(".developers").insertAdjacentHTML('beforeend', `<a href="#games/${value.name}" class="int-link">${value.name}</a>`);
 
     if (response.publishers.length > 0)
       for (let value of response.publishers)
-        document.querySelector(".editors").insertAdjacentHTML('beforeend', `<p> ${value.name}</p> `);
+        document.querySelector(".editors").insertAdjacentHTML('beforeend', `<a href="#games/${value.name}" class="int-link">${value.name}</a>`);
 
     if (response.platforms.length > 0)
       for (let value of response.platforms)
-        document.querySelector(".platforms").insertAdjacentHTML('beforeend', `<p> ${value.platform.name}</p> `);
+        document.querySelector(".platforms").insertAdjacentHTML('beforeend', `<a href="#games/${value.platform.name}" class="int-link">${value.platform.name}</a>`);
 
     if (response.stores.length > 0)
       for (let value of response.stores)
@@ -106,11 +112,11 @@ const PageDetail = (argument) => {
 
     if (response.genres.length > 0)
       for (let value of response.genres)
-        document.querySelector(".genres").insertAdjacentHTML('beforeend', `<p> ${value.name}</p> `);
+        document.querySelector(".genres").insertAdjacentHTML('beforeend', `<a href="#games/${value.name}" class="int-link">${value.name}</a> `);
 
     if (response.tags.length > 0)
       for (let value of response.tags)
-        document.querySelector(".tags").insertAdjacentHTML('beforeend', `<p> ${value.name}</p> `);
+        document.querySelector(".tags").insertAdjacentHTML('beforeend', `<a href="#games/${value.name}" class="int-link">${value.name}</a> `);
   }
 
   const displayGame = (response) => {

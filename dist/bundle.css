@@ -22,6 +22,10 @@
   padding: 0;
 }
 
+h3 {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
 body {
   background: var(--bg);
   color: var(--text);
@@ -29,6 +33,11 @@ body {
 }
 
 a {
+  text-decoration: none;
+}
+
+.int-link {
+  color: var(--text);
   text-decoration: none;
 }
 
@@ -271,7 +280,6 @@ a {
 
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: start;
 }
@@ -280,6 +288,10 @@ a {
 }
 .platforms {
   height: 100%;
+
+  display: flex;
+  flex-direction: column;
+
   overflow: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -289,6 +301,10 @@ a {
 }
 .developers {
   height: 100%;
+
+  display: flex;
+  flex-direction: column;
+
   overflow: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -298,6 +314,10 @@ a {
 }
 .editors {
   height: 100%;
+
+  display: flex;
+  flex-direction: column;
+
   overflow: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -311,6 +331,7 @@ a {
 
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .tags::-webkit-scrollbar {
@@ -318,6 +339,10 @@ a {
 }
 .tags {
   height: 100%;
+
+  display: flex;
+  flex-direction: column;
+
   overflow: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -327,6 +352,10 @@ a {
 }
 .genres {
   height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  
   overflow: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
