@@ -1,5 +1,3 @@
-@import "~bootstrap/scss/bootstrap";
-
-body {
-  background-image: url("../images/1884.jpg");
-}
+@import url('./custom.scss');
+@import url('./pageList.scss');
+@import url('./pageDetail.scss');

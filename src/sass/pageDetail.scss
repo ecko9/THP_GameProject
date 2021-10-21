@@ -1,0 +1,207 @@
+.articles-pd {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  
+  width: 100%;
+  height: 100%;
+}
+
+.bigCardGame {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: aliceblue;
+}
+
+.topBigCard {
+  height: 500px;
+  width: 100%;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.botBigCard {
+  width: 80%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.header {
+  height: 70px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.titleBotBigCard {
+  font-size: 200%;
+  font-weight: bold;
+}
+.rating {
+  font-size: 130%;
+  font-weight: bold;
+}
+
+.additional-infos {
+  width: 100%;
+  height: 100px;
+
+  margin-top: 50px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: start;
+}
+.platforms::-webkit-scrollbar {
+  display: none;
+}
+.platforms {
+  height: 100%;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.developers::-webkit-scrollbar {
+  display: none;
+}
+.developers {
+  height: 100%;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.editors::-webkit-scrollbar {
+  display: none;
+}
+.editors {
+  height: 100%;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.additional-infos2 {
+  width: 100%;
+  height: 100px;
+
+  margin-top: 20px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.tags::-webkit-scrollbar {
+  display: none;
+}
+.tags {
+  height: 100%;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.genres::-webkit-scrollbar {
+  display: none;
+}
+.genres {
+  height: 100%;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
+.stores {
+  width: 80%;
+
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.stores h2 {
+  margin-bottom: 20px;
+}
+
+.trailer {
+  width: 80%;
+
+  margin-top: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.trailer h2 {
+  align-self: flex-start;
+}
+video {
+  width: 100%;
+  margin-top: 20px;
+}
+
+
+.screenshots {
+  width: 80%;
+
+  margin-top: 20px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.screenshots h2 {
+  width: 100%;
+}
+.screen {
+  width: 40%;
+  height: 150px;
+
+  margin-top: 20px;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black;
+}
+
+
+.similar-games {
+  width: 80%;
+
+  margin-top: 20px;
+  margin-bottom: 30px;
+  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.similar-games h2 {
+  width: 100%;
+}
+.similar {
+  width: 40%;
+  height: 150px;
+
+  margin-top: 20px;
+
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black;
+}
+
