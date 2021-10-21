@@ -131,6 +131,7 @@ const PageDetail = (argument) => {
 
   const render = () => {
     document.querySelector('.topDescription').style.display = "none";
+    document.querySelector('.topSelect').style.display = "none";
     pageContent.innerHTML = `
       <section class="page-list">
         <div class="articles articles-pd">...loading</div>

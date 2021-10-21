@@ -103,6 +103,7 @@ const PageList = (argument = "", page_size = 9, platform_id = null) => {
   }
 
   const createSelectPlatform = (allPlatforms) => {
+    document.querySelector('.topSelect').style.display = "";
 
     if (document.querySelector('#select-platform') != null || document.querySelector('#select-platform') != undefined)
       document.querySelector('#select-platform').remove();
